@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stu:Dier</title>
+</head>
+
+<body>
+  <section>
+    <!-- Search Bar -->
+    <h1>Search Bar</h1>
+    <div class="containerSearch">
+      <input type="text" class="searchBar" placeholder="Search">
+      <div class="searchResult">
+
+      </div>
+    </div>
+      
+    
+    <!-- Login form -->
+    <div class="container">
+        <h2>Login Form</h2>
+        <div class="main">
+            <form id="form_id" method="post" name="myform">
+                <label>User Name :</label>
+                <input type="text" name="username" id="email" placeholder="email..."/>
+                <label>Password :</label>
+                <input type="password" name="password" id="password" placeholder="password..."/>
+                <input type="button" value="Login" id="submit" onclick="validate()"/>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register form -->
+    <h2>Register Form</h2>
+    <form>
+      <label for="">Identifiant</label>
+      <input type="identifiant">
+      <label for="">Mot de passe</label>
+      <input type="password">
+      <label for="">Confirmation du mot de passe</label>
+      <input type="password">
+      <label for="">Etablissement Scolaire</label>
+      <input type="scolaire">
+      <label for="">Carte Etudiante</label>
+      <input type="carte">
+    </form>
+
+
+    <!-- Add to favorite -->
+    <h3>Add to favorite</h3>
+    <button class="like" onclick="saveData()" id="saveServer">Favoris</button>
+    <button class="clear" onclick="clearData()">Clear</button>
+
+  </section>
+    
+    
+
+    <!-- Slider -->
+    <!-- <h4>Slider</h4>
+    <div class="slider">
+        <div class="cont-slides">
+          <img src="./img/test1.avif" class="active">
+          <img src="./img/test2.avif" >
+          <img src="./img/test3.avif" >
+        </div>
+    </div>
+
+        <div class="commandes">
+          <button class="left">
+            &#8592;
+          </button>
+          <button class="right">
+            &#8594;
+          </button>
+        </div>
+        <div class="cercles">
+          <button data-clic="1" class="cercle active-cercle"></button>
+          <button data-clic="2" class="cercle"></button>
+          <button data-clic="3" class="cercle"></button>
+        </div>
+      </div> -->
+
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="./img/colorFun.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="./img/solidays.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="./img/journéeActivCampus.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./img/campus.png" style="width:100%">
+        </div>
+        
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+      
+
+
+
+    <script src="./script.js"></script>
+    </body>
+</html>
